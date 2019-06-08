@@ -9,6 +9,10 @@ Whether any third party libraries need to be download if the user does't have it
 http://www.java2s.com/Code/Jar/m/Downloadmysqlconnectorjavajar.htm   - You can find the Myswl Connector in this link
 http://www.java2s.com/Code/Jar/g/Downloadgson222jar.htm              - Google GSON jar available at this location
 
+
+Note: The java servlet uses akax in the jsp side to post the request from ajax call and get the response for the same, and all the server calls in this application is performed using jquery and ajax 
+
+
 All this jars should needs to pushed in catalina home and jdk,jre lib paths, FOR OTHER THIRD Party lib jars try importing the project and it can be identified at that time
 
 1. Please download the application and import it in eclipse java ide
