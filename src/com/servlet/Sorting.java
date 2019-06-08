@@ -1,10 +1,16 @@
 package com.servlet;
 
-import java.io.*;
-import java.util.*;
-import java.sql.*;
-import javax.servlet.*;
-import javax.servlet.http.*;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.ResultSet;
+import java.sql.Statement;
+import java.util.List;
+
+import javax.servlet.ServletConfig;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 import com.dao.DBUtility;
 import com.google.gson.Gson;
@@ -12,11 +18,7 @@ import com.google.gson.Gson;
 import entities.Entity;
 import model.Mdel;
 
-public class DataServlet extends HttpServlet {
-
-    /**
-	 * 
-	 */
+public class Sorting extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	@SuppressWarnings("unused")
 	private ServletConfig config;
@@ -38,12 +40,13 @@ public class DataServlet extends HttpServlet {
         PrintWriter out = response.getWriter();
         Gson gson = new Gson();
         String name = request.getParameter("name");
-        if (name == null) {
-            System.out.println("name is null");
-            sql = "select name,price from network ";
+        
+        if (name.toLowerCase().trim().equals("rating")) {
+        	System.out.println("inside rating"+name.toLowerCase().trim());
+            sql = "select * from network order by rating desc";
         } else {
-        	System.out.println("this is from"+name.length());
-            sql = "select name,price from network where name LIKE '" + name + "%'";
+        	System.out.println("inside price"+name.toLowerCase().trim());
+            sql = "select * from network order by price desc";
         }
 
         ResultSet rs;
@@ -54,7 +57,7 @@ public class DataServlet extends HttpServlet {
             s.executeQuery(sql);
             rs = s.getResultSet();
             Mdel m = new Mdel();
-            List < Entity > ls = m.findPR(rs);
+            List < Entity > ls = m.findAll(rs);
             out.print(gson.toJson(ls));
             out.flush();
             out.close();
