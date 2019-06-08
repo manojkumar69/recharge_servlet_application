@@ -38,16 +38,16 @@ if it ask for any third party libraries kindly download the jar file from online
 
 
 Files Assosiated for the functionalities are
-src/com/dao - CONTAINS THE FILE FOR DB CONNECTION AND RETURN SEARCH LIST FOR AUTO COMPLETE
+1. src/com/dao - CONTAINS THE FILE FOR DB CONNECTION AND RETURN SEARCH LIST FOR AUTO COMPLETE
 
-src/com/servlet - CONTAINS THE SERVLET FOR SORTING, DISPLAY ALL THE DATA, SEARCHING, AUTO COMPLETE
+2. src/com/servlet - CONTAINS THE SERVLET FOR SORTING, DISPLAY ALL THE DATA, SEARCHING, AUTO COMPLETE
 
-src/entities - CONTAINS THE ENITITY TO RETURN THE VALUES WITH CORRESPONDING GETTER AND SETTER
+3. src/entities - CONTAINS THE ENITITY TO RETURN THE VALUES WITH CORRESPONDING GETTER AND SETTER
 
-src/model - CONTAINS THE MODEL TO RETURN TURN THE DATABASE TABLE TO OBJECT ENTITY LIST WHICH FURTHER CONVERTS TO GSON.TOJSON
+4. src/model - CONTAINS THE MODEL TO RETURN TURN THE DATABASE TABLE TO OBJECT ENTITY LIST WHICH FURTHER CONVERTS TO GSON.TOJSON
 
-WebContent - CONTAINS THE autocomplete jquery ajax call, and when you enter the page all the list should be displayed for that onload jquery file executes at the refresh time
-WebContetn/style and index.jsp are the CSS and index of the application
+5. WebContent - CONTAINS THE autocomplete jquery ajax call, and when you enter the page all the list should be displayed for that onload jquery file executes at the refresh time
+6. WebContetn/style and index.jsp are the CSS and index of the application
 
 
 HappyCoding :)
