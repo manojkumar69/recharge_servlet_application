@@ -1,15 +1,14 @@
 #recharge_servlet_application
+
 Java Servlet Web Application
 
 
 The above application should be imported in a eclipse ide,
 
-Whether any third party libraries need to be download if the user does't have it before,
+The java servlet uses akax in the jsp side to post the request and get response from ajax call.
+all the server calls in this application is performed using jquery and ajax.
 
-Note: The java servlet uses akax in the jsp side to post the request from ajax call and get the response for the same, and all the server calls in this application is performed using jquery and ajax 
-
-
-All this jars should needs to pushed in catalina home and jdk,jre lib paths, FOR OTHER THIRD Party lib jars try importing the project and it can be identified at that time
+Here I given some steps to run this application.
 
 1) Please download and import the application in eclipse java ide
 if it ask for any third party libraries kindly download the jar file from online and add the jar in the build path external jar options
