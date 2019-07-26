@@ -12,7 +12,8 @@ import com.google.gson.Gson;
 import entities.Entity;
 import model.Mdel;
 
-public class DataServlet extends HttpServlet {
+public class DataServlet extends HttpServlet
+{
 
     /**
 	 * 
@@ -32,7 +33,8 @@ public class DataServlet extends HttpServlet {
     }
 
     public void doPost(HttpServletRequest request, HttpServletResponse response)
-    throws ServletException, IOException {
+    throws ServletException, IOException
+    {
     	String sql;
         System.out.println("Hello");
         PrintWriter out = response.getWriter();

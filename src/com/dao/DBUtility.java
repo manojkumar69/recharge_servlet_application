@@ -6,10 +6,12 @@ import java.sql.DriverManager;
 public class DBUtility {
 	private static Connection connection = null;
 
-	public static Connection getConnection() throws Exception {
+	public static Connection getConnection() throws Exception 
+	{
 		if (connection != null)
 			return connection;
-		else {
+		else 
+		{
 			String dbUrl = "jdbc:mysql://localhost/data";
 			Class.forName("com.mysql.jdbc.Driver");
 

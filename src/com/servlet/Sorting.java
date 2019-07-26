@@ -18,14 +18,16 @@ import com.google.gson.Gson;
 import entities.Entity;
 import model.Mdel;
 
-public class Sorting extends HttpServlet {
+public class Sorting extends HttpServlet
+{
 	private static final long serialVersionUID = 1L;
 	@SuppressWarnings("unused")
 	private ServletConfig config;
 
 
     public void init(ServletConfig config)
-    throws ServletException {
+    throws ServletException
+    {
         this.config = config;
     }
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{

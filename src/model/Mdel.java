@@ -7,7 +7,8 @@ import java.util.List;
 
 import entities.Entity;
 
-public class Mdel {
+public class Mdel
+{
 	
 	private String name;
 	private int price;
@@ -20,7 +21,8 @@ public class Mdel {
 	public List<Entity> findAll(ResultSet rs)
 	{
 		List<Entity> result = new ArrayList<Entity>();
-		try {
+		try 
+		{
 			while(rs.next())
 			{
 				name = rs.getString("name");

@@ -8,11 +8,13 @@ import java.util.ArrayList;
 public class DataDao {
 	private Connection connection;
 
-	public DataDao() throws Exception {
+	public DataDao() throws Exception 
+	{
 		connection = DBUtility.getConnection();
 	}
 
-	public ArrayList<String> getFrameWork(String frameWork) {
+	public ArrayList<String> getFrameWork(String frameWork)
+	{
 		ArrayList<String> list = new ArrayList<String>();
 		PreparedStatement ps = null;
 		String data;
