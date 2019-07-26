@@ -5,6 +5,7 @@
       <title>Synconext Hire Assignment</title>
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
@@ -110,7 +111,7 @@
       </script>
       <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
       <!-- User defied css -->
-      <link rel="stylesheet" href="style.css">
+      
    </head>
    <body >
       <br />
@@ -119,6 +120,7 @@
       <fieldset>
       <div class="form-group">
       <div class="col-sm-10">
+      	<p class="ab" style="color:blue"><b>INPUT</b></p>
       	<input type="text" id="search" name="search" value="" class="search" />
       </div>
       </div>
@@ -127,13 +129,13 @@
 	 	<br/>
 	 	
 	 	<div class="container">
-			<table id="result"  class="table table-condensed">
+			<table border-collapse="collapse" width="100%" id="result"  class="table table-condensed">
       		</table>
 	 	</div>
       </fieldset>
       </div>
       <div id="checkbox_div">
-      <b><p>Sort By</p></b>
+      <p style="color:blue";><b>Sort By</b></p>
       
       <input type="radio" name="sort" value="Price" > Price<br>
   	  <input type="radio" name="sort" value="Rating" > Rating<br>
